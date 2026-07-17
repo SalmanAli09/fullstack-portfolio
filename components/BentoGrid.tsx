@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { PROJECTS } from '../constants';
 
 const BentoGrid: React.FC = () => {
@@ -16,12 +16,16 @@ const BentoGrid: React.FC = () => {
         const rowSpan = isLarge ? 'md:row-span-2' : 'md:row-span-1';
         
         return (
-          <div 
+          <a
             key={project.id} 
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Open ${project.title}`}
             className={`
               ${colSpan} ${rowSpan}
               group relative rounded-3xl overflow-hidden border border-white/50 shadow-sm
-              bg-white hover:shadow-xl transition-all duration-500
+              bg-white hover:shadow-xl transition-all duration-500 block
             `}
           >
             {/* Image Background */}
@@ -41,9 +45,9 @@ const BentoGrid: React.FC = () => {
                   <div className="bg-primary-500/20 backdrop-blur-md border border-primary-500/30 text-primary-100 px-3 py-1 rounded-full text-xs font-medium mb-3 inline-block">
                      {project.technologies[0]}
                   </div>
-                  <a href="#" className="bg-white text-slate-900 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110 translate-x-4 group-hover:translate-x-0">
+                  <span className="bg-white text-slate-900 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110 translate-x-4 group-hover:translate-x-0">
                     <ArrowUpRight size={20} />
-                  </a>
+                  </span>
                 </div>
                 
                 <h3 className={`font-display font-bold text-white mb-2 leading-tight ${isLarge ? 'text-3xl' : 'text-xl'}`}>
@@ -63,7 +67,7 @@ const BentoGrid: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         );
       })}
     </div>

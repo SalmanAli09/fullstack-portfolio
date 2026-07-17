@@ -101,18 +101,18 @@ const App: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
               </span>
-              Open for freelance & collaborations
+              Full-stack products, automation, and AI workflows
             </div>
 
             <h1 className="hero-text text-6xl md:text-8xl font-display font-bold text-slate-900 leading-[1.1] mb-8 tracking-tight">
-              Building the <br />
+              Shipping live <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-indigo-500 to-primary-500 bg-[length:200%_auto] animate-gradient">
-                Digital Future
+                Product Systems
               </span>
             </h1>
 
             <p className="hero-text text-xl md:text-2xl text-slate-500 mb-10 max-w-2xl leading-relaxed">
-              I'm <span className="text-slate-900 font-semibold">{PERSONAL_INFO.name}</span>. A meticulous FullStack Engineer passionate about crafting sleek, mobile-first experiences with Next.js & Tailwind.
+              I'm <span className="text-slate-900 font-semibold">{PERSONAL_INFO.name}</span>. A Full Stack Engineer building fast React/Next.js products, Django/FastAPI services, and automation workflows that cut real manual work.
             </p>
 
             <div className="hero-text flex flex-wrap gap-4 justify-center">
@@ -126,7 +126,9 @@ const App: React.FC = () => {
                 </span>
               </a>
               <a 
-                href="#"
+                href={PERSONAL_INFO.resume}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group px-8 py-4 bg-white/50 backdrop-blur-md text-slate-900 border border-white/60 rounded-full font-medium shadow-sm hover:bg-white hover:shadow-md transition-all flex items-center"
               >
                 Download CV <Download className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
@@ -174,7 +176,7 @@ const App: React.FC = () => {
                    {PERSONAL_INFO.summary}
                  </p>
                  <p className="text-lg text-slate-600 leading-relaxed">
-                   I firmly believe in the mobile-first strategy and clean architecture. Currently enhancing my craft with complex Next.js architectures and animation libraries like GSAP to bring designs to life.
+                   My recent work spans live SaaS tools, AI outbound calling, gym operations, learning platforms, salon tooling, and interactive gifting products. I like taking messy business workflows and turning them into clean, measurable software.
                  </p>
               </div>
               
@@ -184,8 +186,8 @@ const App: React.FC = () => {
                     <div className="text-sm text-slate-500">Years Experience</div>
                  </div>
                  <div className="p-4 bg-white/50 rounded-2xl border border-white text-center">
-                    <div className="text-3xl font-bold text-primary-600 mb-1">41+</div>
-                    <div className="text-sm text-slate-500">Projects Completed</div>
+                    <div className="text-3xl font-bold text-primary-600 mb-1">31+</div>
+                    <div className="text-sm text-slate-500">Production Client Projects</div>
                  </div>
               </div>
             </div>
@@ -199,7 +201,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="text-center max-w-2xl mx-auto mb-16 section-header">
              <h2 className="text-4xl font-display font-bold text-slate-900 mb-4">Featured Work</h2>
-             <p className="text-slate-500 text-lg">A curated selection of my recent projects, showcasing my expertise in React, Next.js, and modern UI design.</p>
+             <p className="text-slate-500 text-lg">Live products you can open, inspect, and use, built across SaaS, AI automation, operations, education, and consumer workflows.</p>
            </div>
            
            <BentoGrid />
@@ -296,7 +298,7 @@ const App: React.FC = () => {
                  <div className="relative z-10">
                    <h2 className="text-4xl font-display font-bold mb-6">Let's create something amazing together.</h2>
                    <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                     Ready to take your digital presence to the next level? Drop me a line and let's discuss your project.
+                     Need a product shipped, a workflow automated, or a dashboard cleaned up? Drop me a line and let's discuss the build.
                    </p>
                    
                    <div className="space-y-6">
